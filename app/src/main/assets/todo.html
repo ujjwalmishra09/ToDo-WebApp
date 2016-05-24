@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Todo list with AngularJS</title>
+    
+    
+    <link rel="stylesheet" href="css/reset.css">
+
+    
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <html ng-app>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+    <script src="//use.edgefonts.net/vast-shadow:n4:all.js"></script>
+    <script src="//use.edgefonts.net/vast-shadow:n4:all;megrim.js"></script>
+  </head>
+  <body>
+    <div class="todo-wrapper" ng-controller="TodoCtrl">
+      <h2>You've got <span class="emphasis">{{getTotalTodos()}}</span> things to do</h2>
+      
+      <h2 align="center" style="font-family: 'Lucida Sans Typewriter', 'Lucida Console', monaco, 'Bitstream Vera Sans Mono', monospace; font-size: 15px;">This App is modification of This <a href="http://codepen.io/Russbrown/pen/IgBuh">Example</a> by Ujjwal Mishra</h2>
+      <ul>
+        <li ng-repeat="todo in todos">
+          <h3 class="don">Edit time and date to observe changes and click on check box if task is completed<h3>
+          <input type="checkbox" ng-model="todo.done"/>
+           <input type="text" ng-model="todo.date" />
+        <input type="text" ng-model="todo.time" />
+          <span class="done-{{todo.done}}">{{todo.text}}</span>
+            {{" Date="+todo.date+" Time="+todo.time}}
+        </li>
+      </ul>
+      <form>
+        <input class="add-input" placeholder="I need to..." type="text" ng-model="formTodoText" ng-model-instant />
+        <button class="add-btn" ng-click="addTodo()"><h2>Add</h2></button>
+      </form>
+      
+      <button class="clear-btn" ng-click="clearCompleted()">Clear completed</button>
+    </div>
+  </body>
+  
+</html>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js'></script>
+
+        <script src="js/new.js"></script>
+
+    
+    
+    
+  </body>
+</html>

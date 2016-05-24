@@ -2,6 +2,12 @@
 
 It is an android app for managing different work.
 
+Clone this repo or [Download Zip](https://github.com/ujjwalmishra09/ToDo-WebAp/archive/master.zip)
+
+And there is apk file you can install it.
+
+Angular js code is in the ToDo-WebApp/app/src/main/assets/
+
 ## Bugs and feature requests
 
 Have a bug or a feature request? If your problem or idea is not addressed yet, [please open a new issue](https://github.com/ujjwalmishra09/ToDo-WebApp/issues).
